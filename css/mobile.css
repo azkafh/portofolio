@@ -1,0 +1,28 @@
+/* ===== TAMPILAN MOBILE BOARD (index.html) =====
+   Dimuat dengan media="(max-width: 900px)", jadi desktop tidak terpengaruh sama sekali.
+   Posisi item di bawah menimpa left/top dari items.js (makanya pakai !important). */
+.scroller{padding:8px}
+.frame{min-width:0;padding:8px}            /* hapus lebar minimum 1000px */
+.board{height:840px}
+
+/* Hero: lebar penuh di atas; pin dipindah ke bawah agar benang tidak melintasi teks */
+.hero{left:6%;top:3%;width:88%;padding:16px 16px 18px}
+.hero__name{font-size:clamp(22px,7vw,32px);letter-spacing:.04em}
+.hero__desc{font-size:14px;margin-top:8px}
+.hero__pin{top:auto;bottom:-7px}
+
+/* Ukuran note & foto */
+.item--menu{width:clamp(130px,38vw,220px);min-height:110px;padding:14px;font-size:clamp(18px,5.2vw,30px)}
+.item--menu:hover{transform:rotate(var(--rot,0deg))}
+.item--photo{width:clamp(110px,31vw,180px)!important}
+
+/* Posisi (persen dari board). Ubah di sini kalau mau menggeser di mobile. */
+.item[data-id="about"]{left:4%!important;top:25%!important}
+.item[data-id="projects"]{left:55%!important;top:27%!important}
+.item[data-id="foto1"]{left:29%!important;top:42%!important}
+.item[data-id="foto2"]{left:36%!important;top:60%!important}
+.item[data-id="skills"]{left:4%!important;top:81%!important}
+.item[data-id="contact"]{left:55%!important;top:83%!important}
+
+/* Sentuh: halaman tetap bisa di-scroll ke bawah; drag dimatikan di drag.js, note cukup diketuk */
+.item{touch-action:pan-y}

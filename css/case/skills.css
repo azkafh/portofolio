@@ -1,0 +1,8 @@
+.skill-group{margin:22px 0 6px;text-transform:uppercase;letter-spacing:.12em;font-size:15px;border-bottom:2px solid var(--ink)}
+.skill{display:grid;grid-template-columns:40ch 1fr;align-items:center;gap:12px;font-size:14px;line-height:28px}
+
+@media (max-width:720px){
+  .skill{grid-template-columns:1fr;gap:2px;line-height:1.5;margin-bottom:10px}
+}
+.skill i{display:block;height:10px;background:#0002}
+.skill i::after{content:"";display:block;height:100%;width:var(--lv);background:var(--string)}

@@ -1,0 +1,7 @@
+/* Foto latar: dekorasi di belakang item, tidak bisa diklik/drag */
+.backdrop{position:absolute;inset:0;z-index:0;pointer-events:none}
+.bg-photo{position:absolute;margin:0;padding:8px 8px 22px;background:#f3eee0;transform:rotate(var(--rot,0deg));
+  box-shadow:2px 6px 12px #0006;opacity:.9}
+.bg-photo img{display:block;width:100%;filter:grayscale(1) sepia(.35) contrast(1.05)}
+.bg-photo__tape{position:absolute;top:-10px;left:50%;width:64px;height:20px;margin-left:-32px;
+  background:#e8dca088;transform:rotate(-3deg)}

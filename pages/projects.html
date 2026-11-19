@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Portofolio</title>
+  <link rel="icon" type="image/png" href="../assets/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/case/case.css">
+  <link rel="stylesheet" href="../css/case/projects.css">
+  <link rel="stylesheet" href="../css/case/case-mobile.css" media="(max-width: 720px)">
+  <script>
+    /* Datang dari zoom-in board: sembunyikan halaman sampai siap (cegah kedip) */
+    (function(){try{var c=sessionStorage.getItem('cb:arrive');if(c){var d=document.documentElement;
+      d.classList.add('arriving');d.style.background=c;setTimeout(function(){d.classList.remove('arriving')},2000)}}catch(e){}})();
+  </script>
+</head>
+<body class="case" data-note="projects" data-color="yellow">
+  <div class="desk">
+    <nav class="tabs" aria-label="Berkas">
+      <a class="tab" href="about.html" data-leave="tab">About</a>
+      <a class="tab is-active" href="projects.html" data-leave="tab" aria-current="page">Projects</a>
+      <a class="tab" href="skills.html" data-leave="tab">Skills</a>
+      <a class="tab" href="contact.html" data-leave="tab">Contact</a>
+    </nav>
+
+    <article class="folder">
+      <header class="folder__head">
+        <span class="label">CASE FILE No. 002</span>
+        <h1>Projects</h1>
+        <span class="stamp">CONFIDENTIAL</span>
+      </header>
+
+      <!-- Satu <details> = satu proyek. Salin satu blok untuk menambah. Hapus atribut "open" kalau tidak mau terbuka otomatis. -->
+      <div class="project-list">
+        <details class="project">
+          <summary>
+            <h3 class="project__title">Ajarin</h3>
+            <span class="project__stamp">SOLVED</span>
+            <span class="project__chev" aria-hidden="true"></span>
+          </summary>
+          <div class="project__body">
+            <div class="project__side">
+                <figure class="project__shot">
+                <img src="../assets/images/ajarin.png" alt="Tampilan antarmuka Ajarin" loading="lazy">
+                </figure>
+                <dl>
+                <dt>Role</dt><dd>Frontend Developer</dd>
+                <dt>Tech stack</dt>
+                <dd><ul class="chips"><li>Next.js</li><li>React</li><li>JSON</li><li>TypeScript</li></ul></dd>
+                <dt>Links</dt>
+                <dd><a class="project__link" href="https://github.com/FPRPL26/rpl-fe" target="_blank" rel="noopener">GitHub</a></dd>
+                </dl>
+            </div>
+
+            <div class="project__info">
+                <p class="project__desc">A web-based academic mentoring and peer-to-peer learning marketplace specifically tailored for ITS students to find verified mentors, book tutoring sessions, and exchange skills.</p>
+                <dl>
+                <dt>Key Takeaways</dt>
+                <dd>
+                    <ul class="takeaways">
+                    <li>Learned how to structure a scalable frontend architecture using Next.js App Router and implement efficient global state management with Zustand alongside React Query.</li>
+                    <li>Gained hands-on experience in building a robust service layer using Axios to securely and seamlessly communicate with a Golang backend.</li>
+                    <li>Mastered responsive design implementation with Tailwind CSS to ensure a consistent, mobile-friendly user experience across laptops, tablets, and smartphones.</li>
+                    </ul>
+                </dd>
+                </dl>
+            </div>
+            </div>
+        </details>
+
+        <details class="project">
+          <summary>
+            <h3 class="project__title">Event Management System</h3>
+            <span class="project__stamp">SOLVED</span>
+            <span class="project__chev" aria-hidden="true"></span>
+          </summary>
+          <div class="project__body project__body--compact">
+            <div class="project__side">
+                <figure class="project__shot project__shot--small">
+                    <img src="../assets/images/image.png" alt="Tampilan antarmuka Event Management System" loading="lazy">
+                </figure>
+                <dl>
+                <dt>Role</dt><dd>Developer (Team of 2)</dd>
+                <dt>Tech stack</dt>
+                <dd><ul class="chips"><li>C#</li><li>Clean Architecture</li><li>Domain Driven Design</li><li>CQRS</li></ul></dd>
+                <dt>Links</dt>
+                <dd><a class="project__link" href="https://github.com/RootKanya/TicketManagementSystem.git" target="_blank" rel="noopener">GitHub</a></dd>
+                </dl>
+            </div>
+
+            <div class="project__info">
+                <p class="project__desc">A comprehensive event ticketing and booking backend system developed for event management, featuring complete user flows from event creation, ticket category configuration, booking reservations with expiration deadlines, payment processing, gate check-in validation, to automated refund workflows.</p>
+                <dl>
+                <dt>Key Takeaways</dt>
+                <dd>
+                    <ul class="takeaways">
+                    <li>Gained deep practical experience in enforcing strict separation of concerns across Domain, Application, Infrastructure, and Presentation layers.</li>
+                    <li>Mastered tactical Domain-Driven Design (DDD) patterns—such as aggregates, entities, value objects, domain services, and domain events—to handle complex business rules securely.</li>
+                    <li>Implemented the CQRS pattern with distinct commands, queries, and handlers to separate write mutations from read operations effectively.</li>
+                    <li>Developed robust automated unit tests for domain logic to ensure high maintainability, testability, and adherence to strict domain invariants.</li>
+                    </ul>
+                </dd>
+                </dl>
+            </div>
+            </div>
+        </details>
+
+        <details class="project">
+          <summary>
+            <h3 class="project__title">Filmuru</h3>
+            <span class="project__stamp">SOLVED</span>
+            <span class="project__chev" aria-hidden="true"></span>
+          </summary>
+          <div class="project__body">
+            <div class="project__side">
+                <figure class="project__shot">
+                    <img src="../assets/images/filmuru.png" alt="Tampilan antarmuka Filmuru" loading="lazy">
+                </figure>
+                <dl>
+                <dt>Role</dt><dd>Frontend Developer</dd>
+                <dt>Tech stack</dt>
+                <dd><ul class="chips"><li>TypeScript</li><li>Next.js</li><li>React</li><li>Tailwind CSS</li><li>Zustand</li><li>REST API</li></ul></dd>
+                <dt>Links</dt>
+                <dd><a class="project__link" href="https://github.com/azkafh/filmuru.git" target="_blank" rel="noopener">GitHub</a></dd>
+                </dl>
+            </div>
+
+            <div class="project__info">
+                <p class="project__desc">A web-based personal movie journal and discovery platform (inspired by Letterboxd) that allows users to track watched films, rate and like favorites, write and share reviews, manage watchlists, and browse a films catalog.</p>
+                <dl>
+                <dt>Key Takeaways</dt>
+                <dd>
+                    <ul class="takeaways">
+                    <li>Implemented efficient client-side global state management using Zustand to handle user sessions, watchlists, and review states smoothly across views.</li>
+                    <li>Translated modern UI aesthetics (such as glassmorphism cards and responsive grid layouts) into clean, reusable React components using Tailwind CSS.</li>
+                    </ul>
+                </dd>
+                </dl>
+            </div>
+            </div>
+        </details>
+
+        <details class="project">
+          <summary>
+            <h3 class="project__title">QuizITS</h3>
+            <span class="project__stamp">SOLVED</span>
+            <span class="project__chev" aria-hidden="true"></span>
+          </summary>
+          <div class="project__body">
+            <div class="project__side">
+                <figure class="project__shot">
+                    <img src="../assets/images/quizits.png" alt="Tampilan antarmuka QuizITS" loading="lazy">
+                </figure>
+                <dl>
+                <dt>Role</dt><dd>Full Stack Developer</dd>
+                <dt>Tech stack</dt>
+                <dd><ul class="chips"><li>Java</li><li>Android SDK</li><li>XML</li><li>Senopati AI API</li><li>PDF/PPTX Document Parser</li><li>REST API</li></ul></dd>
+                <dt>Links</dt>
+                <dd><a class="project__link" href="https://github.com/RootKanya/AndroidFinalProject.git" target="_blank" rel="noopener">GitHub</a></dd>
+                </dl>
+            </div>
+
+            <div class="project__info">
+                <p class="project__desc">An AI-powered mobile study assistant that transforms uploaded study materials (PDF and PPTX files) into interactive flashcards and multiple-choice quizzes using SENOPATI AI (ITS's generative AI platform), complete with an integrated "Ask AI" Q&A chat and score tracking system.</p>
+                <dl>
+                <dt>Key Takeaways</dt>
+                <dd>
+                    <ul class="takeaways">
+                    <li>Developed a native Android application in Java, managing multi-screen activity lifecycles, custom UI components, and local file pickers for PDF and PPTX documents.</li>
+                    <li>Built an end-to-end document ingestion pipeline to parse study materials and structure prompts for SENOPATI AI to generate accurate, context-aware questions and explanations.</li>
+                    </ul>
+                </dd>
+                </dl>
+            </div>
+            </div>
+        </details>
+
+        <details class="project">
+          <summary>
+            <h3 class="project__title">Terminal-Based Cloudflare Dashboard</h3>
+            <span class="project__stamp">IN PROGRESS</span>
+            <span class="project__chev" aria-hidden="true"></span>
+          </summary>
+          <div class="project__body">
+            <div class="project__side">
+                <figure class="project__shot">
+                    <img src="../assets/images/cloudflare.png" alt="Tampilan antarmuka TUI Cloudflare" loading="lazy">
+                </figure>
+                <dl>
+                <dt>Role</dt><dd>Project Manager</dd>
+                <dt>Tech stack</dt>
+                <dd><ul class="chips"><li>Rust</li><li>Ratatui</li><li>Cloudflare GraphQL Analytics & REST API</li><li>Crossterm</li><li>Reqwest</li><li>Tokio</li></ul></dd>
+                <dt>Links</dt>
+                <dd><a class="project__link" href="https://github.com/RootKanya/AndroidFinalProject.git" target="_blank" rel="noopener">GitHub</a></dd>
+                </dl>
+            </div>
+
+            <div class="project__info">
+                <p class="project__desc">A lightweight, responsive, and cross-platform Terminal-based User Interface (TUI) dashboard developed in Rust to monitor Cloudflare network traffic, security events, and performance metrics directly from terminal or SSH sessions without requiring a web browser or graphical environment</p>
+                <dl>
+                <dt>Current Focus</dt>
+                <dd>
+                    <ul class="takeaways">
+                    <li>Translating product requirements into actionable sprint backlog items.</li>
+                    <li>Facilitating sprint planning sessions and learning how to effectively manage and track team progress following Agile practices.</li>
+                    <li>Navigating technical constraints—such as API rate limits and async polling—within an iterative development cycle.</li>
+                    </ul>
+                </dd>
+                </dl>
+            </div>
+            </div>
+        </details>
+      </div>
+
+      <a class="back" href="../index.html" data-leave="board">← Back to board</a>
+    </article>
+  </div>
+  <script src="../js/case.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+/* Kerangka halaman case file: meja + tab folder + map manila + kertas */
+body.case{padding:28px 16px 56px;color:var(--ink);
+  background:radial-gradient(ellipse at 50% 0,#2e3f33 0,#1b2620 75%) fixed}
+html.entering .folder{animation:folderIn .8s cubic-bezier(.2,.7,.2,1) both}
+@keyframes folderIn{from{transform:scale(1.25);opacity:.4}to{transform:none;opacity:1}}
+
+.folder h1{margin:14px 0 0;font:700 clamp(38px,7vw,66px)/1.05 var(--mono);color:#000;
+  text-transform:uppercase;letter-spacing:.06em}
+
+.desk{max-width:980px;margin:0 auto}
+
+.tabs{display:flex;flex-wrap:wrap;gap:4px;margin-left:28px}
+.tab{padding:10px 20px 8px;border-radius:10px 10px 0 0;background:var(--note-paper);color:var(--ink);text-decoration:none;
+  font-size:13px;text-transform:uppercase;letter-spacing:.14em;transform:translateY(6px);transition:transform .2s}
+.tab:hover{transform:translateY(2px)}
+.tab.is-active{transform:none;padding-bottom:14px;position:relative;z-index:2}
+
+.folder{position:relative;padding:28px clamp(16px,4vw,48px) 36px;border-radius:4px 10px 10px 10px;
+  background:linear-gradient(160deg,#ead7a4,#d9bf85);border-top:8px solid var(--note-paper);
+  box-shadow:0 24px 50px #000a, inset 0 0 40px #8a6a2a33}
+.folder__head{position:relative;margin-bottom:28px}
+.tab:not(.is-active){background:#e6e0cc}
+.label{display:inline-block;padding:5px 12px;background:#fffdf4;border:1px solid #0003;font-size:12px;letter-spacing:.2em;
+  transform:rotate(-1.5deg);box-shadow:1px 2px 4px #0003}
+.folder h1{margin:14px 0 0;font:400 clamp(38px,7vw,66px)/1 var(--mono);text-transform:uppercase;letter-spacing:.08em}
+.stamp{position:absolute;top:0;right:0;padding:2px 12px;border:3px solid var(--string);color:var(--string);
+  font-size:clamp(12px,2vw,18px);letter-spacing:.2em;transform:rotate(8deg);opacity:.85}
+
+/* kertas di dalam map */
+.sheet{position:relative;margin:0 0 24px;padding:26px clamp(16px,3vw,36px);background:#fffdf4 repeating-linear-gradient(transparent 0 27px,#9bb7d455 27px 28px);
+  box-shadow:2px 5px 12px #0004;transform:rotate(-.3deg);line-height:28px}
+.sheet:nth-of-type(even){transform:rotate(.4deg)}
+.sheet h2{margin:0 0 10px;text-transform:uppercase;letter-spacing:.1em;font-size:20px;border-bottom:2px solid var(--ink)}
+.sheet p{margin:10px 0}
+.sheet a{color:var(--string)}
+.paperclip::before{content:"";position:absolute;top:-16px;left:28px;width:16px;height:48px;border:3px solid #8a8f99;border-radius:10px;z-index:2}
+
+.back{display:inline-block;padding:10px 18px;background:var(--ink);color:var(--paper);text-decoration:none;font-size:13px;letter-spacing:.1em}
+.back:hover{background:var(--string)}
+.redact{padding:0 6px;background:#111;color:#111;cursor:help;transition:color .2s}
+.redact:hover{color:#fff}

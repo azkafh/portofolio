@@ -1,0 +1,14 @@
+.about{display:flex;flex-wrap:wrap;gap:32px;align-items:flex-start}
+.polaroid{margin:0;width:220px;padding:12px 12px 8px;background:#fbfaf5;box-shadow:3px 8px 16px #0005;transform:rotate(-2deg);line-height:1.2}
+.polaroid img{display:block;width:100%;filter:grayscale(1) contrast(1.1)}
+.polaroid figcaption{margin-top:8px;text-align:center;font:24px var(--hand)}
+.about__text{flex:1;min-width:260px}
+.facts{display:grid;grid-template-columns:110px 1fr;gap:0 12px;margin:10px 0}
+.facts dt{font-weight:bold;text-transform:uppercase;font-size:12px;letter-spacing:.1em}
+.facts dd{margin:0}
+
+
+.about__text dd{margin:2px 0 0;font-size:14px}
+.about__text dt{margin-top:12px;font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--string)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;padding:0;margin:4px 0 0;list-style:none}
+.chips li{padding:2px 8px;background:var(--ink);color:var(--paper);font-size:11px;line-height:1.6}

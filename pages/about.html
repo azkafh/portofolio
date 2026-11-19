@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Portofolio</title>
+  <link rel="icon" type="image/png" href="../assets/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/case/case.css">
+  <link rel="stylesheet" href="../css/case/about.css">
+  <link rel="stylesheet" href="../css/case/case-mobile.css" media="(max-width: 720px)">
+  <script>
+    /* Datang dari zoom-in board: sembunyikan halaman sampai siap (cegah kedip) */
+    (function(){try{var c=sessionStorage.getItem('cb:arrive');if(c){var d=document.documentElement;
+      d.classList.add('arriving');d.style.background=c;setTimeout(function(){d.classList.remove('arriving')},2000)}}catch(e){}})();
+  </script>
+</head>
+<body class="case" data-note="about" data-color="note-paper">
+  <div class="desk">
+    <nav class="tabs" aria-label="Berkas">
+      <a class="tab tab--green is-active" href="about.html" data-leave="tab" aria-current="page">About</a>
+      <a class="tab tab--yellow" href="projects.html" data-leave="tab">Projects</a>
+      <a class="tab tab--blue" href="skills.html" data-leave="tab">Skills</a>
+      <a class="tab tab--pink" href="contact.html" data-leave="tab">Contact</a>
+    </nav>
+
+    <article class="folder folder--green">
+      <header class="folder__head">
+        <span class="label">CASE FILE No. 001</span>
+        <h1>About</h1>
+        <span class="stamp">CONFIDENTIAL</span>
+      </header>
+
+      <section class="sheet paperclip about">
+        <figure class="polaroid">
+          <img src="../assets/images/Azka.jpg" alt="Foto Nama Kamu">
+        </figure>
+        <div class="about__text">
+          <h2>Hi, I'm Azka!</h2>
+          <p> I’m a Software Engineering student based in Surabaya, Indonesia, specializing in frontend development with React and Next.js. I enjoy turning design concepts into fast, responsive, and user-friendly web applications. Alongside my studies, I serve as a Database Systems Teaching Assistant. I'm currently looking for software engineering internship opportunities.</p>
+          <dt>Interests</dt>
+          <dd><ul class="chips"><li>Web Development</li><li>Software Project Management</li><li>Software Architecture and Design</li><li>Software Quality Assurance</li><li>Game Development</li></ul></dd>  
+        </div>
+      </section>
+
+      <a class="back" href="../index.html" data-leave="board">← Back to board</a>
+    </article>
+  </div>
+  <script src="../js/case.js"></script>
+</body>
+</html>

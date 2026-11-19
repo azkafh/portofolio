@@ -1,0 +1,1 @@
+export const renderNote = it => `<i class="pin"></i>${it.title}`;

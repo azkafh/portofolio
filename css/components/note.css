@@ -1,0 +1,8 @@
+.item--note{width:170px;min-height:140px;padding:26px 14px 14px;background:var(--note-paper);color:var(--ink);
+  font-family:var(--mono);font-size:30px;line-height:1.1;box-shadow:3px 8px 14px #0005}
+.item--note small{display:block;margin-top:8px;font-family:var(--mono);font-size:11px;opacity:.65}
+
+/* Sticky note menu (bisa diklik → zoom ke halaman) */
+.item--menu{width:220px;min-height:160px;display:flex;align-items:center;justify-content:center;
+  padding:20px;font-size:30px;text-align:center;font-weight: 700;}
+.item--menu:hover{transform:rotate(var(--rot,0deg)) scale(1.07)}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>azkafh | Portfolio</title>
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Allerta&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components/item.css">
+  <link rel="stylesheet" href="css/components/note.css">
+  <link rel="stylesheet" href="css/components/photo.css">
+  <link rel="stylesheet" href="css/components/backdrop.css">
+  <link rel="stylesheet" href="css/components/strings.css">
+  <link rel="stylesheet" href="css/components/hero.css">
+  <link rel="stylesheet" href="css/mobile.css" media="(max-width: 900px)">
+
+  <script>
+  (function(){try{var r=JSON.parse(sessionStorage.getItem('cb:return')||'null');
+    if(r&&Date.now()-r.t<5000){var d=document.documentElement;
+      d.classList.add('arriving');d.style.background=r.color;
+      setTimeout(function(){d.classList.remove('arriving')},2000)}}catch(e){}})();
+  </script>
+</head>
+<body>
+
+  <main class="scroller">
+    <div class="frame">
+      <div class="board" id="board">
+        <div class="world" id="world">
+          <div class="hero">
+            <i class="hero__pin" data-anchor="t"></i>
+            <h2 class="hero__name">Azka Fauziyah Hanifah</h2>
+            <p class="hero__desc">A third year Software Engineering Student at Institut Teknologi Sepuluh Nopember</p>
+          </div>
+          <div class="backdrop" id="backdrop"></div>
+          <svg class="strings" id="strings"></svg>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Navigasi teks biasa: untuk keyboard, pembaca layar, dan SEO -->
+  <nav class="sr-only" aria-label="Halaman"> 
+    <a href="pages/about.html">About</a> 
+    <a href="pages/projects.html">Projects</a>
+    <a href="pages/skills.html">Skills</a> 
+    <a href="pages/contact.html">Contact</a>
+  </nav>
+
+  <div class="curtain" id="curtain"></div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+/* ===== TAMPILAN MOBILE HALAMAN CASE FILE =====
+   Dimuat dengan media="(max-width: 720px)", jadi desktop tidak terpengaruh. */
+body.case{padding:12px 8px 40px}
+.tabs{margin-left:8px;gap:3px}
+.tab{padding:8px 10px 6px;font-size:11px;letter-spacing:.08em}
+.tab.is-active{padding-bottom:10px}
+
+.folder{padding:20px 16px 28px}
+.folder__head{margin-bottom:22px}
+.folder h1{font-size:clamp(30px,10vw,44px)}
+.label{font-size:10px;letter-spacing:.14em}
+.stamp{top:2px;padding:1px 8px;border-width:2px;font-size:10px;letter-spacing:.12em}
+.sheet{padding:22px 14px}
+
+/* About */
+.about{justify-content:center}
+.about__text{min-width:0;flex-basis:100%}
+
+/* Projects: aturan ".project__body--compact" (300px + 1fr) menimpa versi mobile, jadi dikembalikan ke 1 kolom */
+.project summary{padding:14px}
+.project__body{padding:16px 14px 20px}
+.project__body--compact{grid-template-columns:1fr}
+.project__shot--small{max-width:100%}
+
+/* Contact */
+.contact-list b{min-width:0;display:block}

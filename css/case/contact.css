@@ -1,0 +1,33 @@
+/* Daftar kontak: tiap baris = link (+ tombol Copy untuk email), dimiringkan sebagai satu kesatuan */
+.contact-list{display:grid;gap:14px;padding:0;margin:20px 0 8px;list-style:none;max-width:540px}
+.contact-list li{display:flex;flex-wrap:wrap;align-items:stretch;gap:10px;transform:rotate(-1deg);transition:transform .2s}
+.contact-list li:nth-child(even){transform:rotate(1deg)}
+.contact-list li:hover{transform:rotate(0) scale(1.03)}
+.contact-list a{flex:1 1 220px;min-width:0;display:block;padding:12px 18px;background:#fff;color:var(--ink);
+  text-decoration:none;line-height:1.5;box-shadow:2px 5px 10px #0004;overflow-wrap:anywhere}
+.contact-list b{display:inline-block;min-width:100px;color:var(--string);text-transform:uppercase;letter-spacing:.1em}
+
+/* Tombol Copy: cokelat, di samping email */
+.copy-email{flex:none;padding:0 18px;border:0;background:var(--frame);color:var(--paper);
+  font:13px var(--mono);letter-spacing:.1em;cursor:pointer;box-shadow:2px 5px 10px #0004;transition:background .2s}
+.copy-email:hover{background:#6b4426}
+.copy-email:focus-visible{outline:3px solid var(--string);outline-offset:2px}
+
+/* Form pesan */
+.msg-form{display:grid;gap:16px;margin-top:14px;line-height:1.4}
+.msg-form__row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.msg-form label{display:grid;gap:4px;font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--string)}
+.msg-form input,.msg-form textarea{width:100%;padding:10px 12px;border:2px solid var(--frame);border-radius:0;background:#fff;color:var(--ink);
+  font:400 15px/1.4 var(--mono);letter-spacing:normal;text-transform:none}
+.msg-form textarea{min-height:140px;resize:vertical}
+.msg-form input:focus,.msg-form textarea:focus{border-color:var(--string);outline:3px solid #c1121f33}
+.msg-form .msg-form__honey{display:none}   /* jebakan spam: harus tetap kosong */
+.msg-form__foot{display:flex;flex-wrap:wrap;align-items:center;gap:16px}
+.msg-form__send{padding:10px 20px;border:0;background:var(--ink);color:var(--paper);font:13px var(--mono);letter-spacing:.1em;cursor:pointer}
+.msg-form__send:hover{background:var(--string)}
+.msg-form__send:disabled{opacity:.6;cursor:wait}
+.msg-form__status{margin:0;font-size:14px}
+.msg-form__status.is-ok{color:#1a6b2f}
+.msg-form__status.is-error{color:var(--string)}
+
+@media (max-width:720px){.msg-form__row{grid-template-columns:1fr}}

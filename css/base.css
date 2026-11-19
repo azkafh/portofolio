@@ -1,0 +1,15 @@
+:root{
+  --room:#17120e; --paper:#f4efe1; --ink:#2a2118; --string:#c1121f;
+  --frame:#4a2f1a; --frame-dark:#2e1c0f;
+  --note-paper:#fbf8ee;
+  --mono:'Special Elite','Courier New',monospace;
+  --hand:'Caveat','Comic Sans MS',cursive;
+  --serif:'Roboto Slab',Georgia,serif;
+}
+*{box-sizing:border-box}
+html{background:var(--room)}
+body{margin:0;min-height:100vh;background:var(--room);color:var(--paper);font-family:var(--mono);transition:opacity .5s}
+/* transisi antar-halaman: body disembunyikan, warna sticky note terlihat di belakangnya */
+html.arriving body,html.leaving body{opacity:0}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (prefers-reduced-motion:reduce){*{transition-duration:.01s!important;animation-duration:.01s!important}}

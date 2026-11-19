@@ -1,0 +1,7 @@
+.item{position:absolute;z-index:2;cursor:grab;user-select:none;touch-action:none;
+  transform:rotate(var(--rot,0deg));transition:transform .2s}
+.item:active{cursor:grabbing;z-index:9}
+.item:hover{z-index:8}
+.item img{display:block;width:100%;pointer-events:none}
+.pin{position:absolute;top:-7px;left:50%;width:16px;height:16px;margin-left:-8px;z-index:3;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,#ff7b7b,#b00 60%,#600);box-shadow:2px 4px 4px #0006}

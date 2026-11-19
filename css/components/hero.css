@@ -1,0 +1,13 @@
+/* Label nama di tengah board. Tidak bisa diklik/drag, punya 1 pin di atas sebagai ujung benang. */
+.hero{position:absolute;z-index:1;
+  left:calc(50% - min(440px,38%) / 2);   /* tengah horizontal tanpa translate, supaya posisi pin bisa dihitung */
+  top:26%;                                /* geser naik/turun di sini */
+  width:min(440px,38%);transform:rotate(-1deg);
+  padding:22px 26px 24px;text-align:center;
+  background:var(--note-paper);box-shadow:3px 8px 16px #0005;pointer-events:none}
+.hero__name{margin:0;font:700 clamp(28px,3.6vw,46px)/1.05 var(--mono);color:#000;text-transform:uppercase;letter-spacing:.06em}
+.hero__desc{margin:10px 0 0;font:500 18px/1.4 var(--serif);color:var(--ink);letter-spacing:.02em}
+
+/* 1 pin merah di tengah atas hero (jangkar "t" di links.js → hero@t) */
+.hero__pin{position:absolute;top:-7px;left:50%;width:16px;height:16px;margin-left:-8px;z-index:3;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,#ff7b7b,#b00 60%,#600);box-shadow:2px 4px 4px #0006}
